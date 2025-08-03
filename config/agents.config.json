@@ -1,0 +1,52 @@
+{
+  "agents": {
+    "projectManager": {
+      "name": "Project Manager",
+      "version": "1.0.0",
+      "capabilities": [
+        "task_decomposition",
+        "agent_coordination",
+        "progress_tracking",
+        "quality_control"
+      ],
+      "config": {
+        "maxConcurrentTasks": 5,
+        "defaultTimeout": 300000,
+        "retryAttempts": 3
+      }
+    },
+    "designCloner": {
+      "name": "Design Cloner",
+      "version": "1.0.0",
+      "capabilities": [
+        "image_analysis",
+        "layout_extraction",
+        "color_extraction",
+        "component_detection",
+        "platform_scraping"
+      ],
+      "supportedPlatforms": [
+        "behance",
+        "dribbble",
+        "figma",
+        "direct_image"
+      ]
+    },
+    "uiBuilder": {
+      "name": "UI Builder",
+      "version": "1.0.0",
+      "framework": "nextjs",
+      "capabilities": [
+        "component_generation",
+        "responsive_design",
+        "animation_implementation",
+        "accessibility_compliance"
+      ]
+    }
+  },
+  "communication": {
+    "protocol": "event-driven",
+    "messageQueue": "in-memory",
+    "persistence": "file-based"
+  }
+}

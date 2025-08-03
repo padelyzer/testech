@@ -1,0 +1,32 @@
+{
+  "platforms": {
+    "behance": {
+      "baseUrl": "https://www.behance.net",
+      "selectors": {
+        "projectImages": "img[srcset*='project_modules']",
+        "title": "h1.ProjectInfo-projectTitle",
+        "description": ".ProjectInfo-projectDescription",
+        "colors": ".ProjectColors-color",
+        "tags": ".ProjectTags-tag"
+      },
+      "api": {
+        "endpoint": "https://www.behance.net/v2/projects",
+        "requiresAuth": true
+      }
+    },
+    "dribbble": {
+      "baseUrl": "https://dribbble.com",
+      "selectors": {
+        "shotImage": "picture.shot-thumbnail-base img",
+        "title": "h1.shot-title",
+        "description": ".shot-description",
+        "colorPalette": ".color-swatch",
+        "tags": ".shot-tags-list a"
+      },
+      "rateLimit": {
+        "requests": 60,
+        "window": 3600
+      }
+    }
+  }
+}

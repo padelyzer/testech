@@ -1,0 +1,32 @@
+{
+  "name": "web-development-agents",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node agents/main.js",
+    "dev": "node agents/main.js --dev",
+    "cli": "node agents/cli.js",
+    "analyze": "node agents/design-cloner/analyzer.js",
+    "generate": "node agents/project-manager/orchestrator.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "chalk": "^5.3.0",
+    "cheerio": "^1.0.0-rc.12",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.1",
+    "figlet": "^1.7.0",
+    "inquirer": "^9.2.15",
+    "openai": "^4.28.0",
+    "ora": "^8.0.1",
+    "playwright": "^1.42.0",
+    "puppeteer": "^22.0.0",
+    "sharp": "^0.33.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
