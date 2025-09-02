@@ -69,4 +69,4 @@ Optimizado para:
 
 ---
 
-Desarrollado con ❤️ para la industria de Puebla
+Desarrollado con ❤️ para la industria de Puebla# Trigger GitHub Pages build
