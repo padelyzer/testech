@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+.npm
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+outputs/builds/
+
+# Temp files
+*.tmp
+*.temp
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Test files
+test-responsive.html
+
+# Local config
+.env
+.env.local
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Industrial site folders (temporary)
+industrial-site-*/
+
+# Agents folder
+agents/

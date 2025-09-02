@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Termografía Mecánica: Motores y Rodamientos | TESTECH Puebla</title>
+    <meta name="description" content="Temperaturas normales vs críticas en equipos rotativos. Guía práctica con tabla de referencia y protocolos de inspección para industrias en Puebla.">
+    <meta name="keywords" content="termografía mecánica puebla, inspección motores, rodamientos temperatura, mantenimiento predictivo mecánico">
+    
+    <link rel="canonical" href="https://testech.mx/blog/termografia-mecanica-guia.html">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #ff6f00;
+            --dark-gray: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-gray);
+            line-height: 1.8;
+        }
+        
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 28px;
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-brand span {
+            color: var(--secondary-color);
+        }
+        
+        .article-header {
+            background: linear-gradient(135deg, var(--primary-color), #283593);
+            color: white;
+            padding: 100px 0 50px;
+            margin-top: 70px;
+        }
+        
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .article-content h2 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin: 30px 0 20px;
+        }
+        
+        .temp-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin: 30px 0;
+        }
+        
+        .temp-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 12px;
+        }
+        
+        .temp-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        
+        .quick-tip {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, var(--secondary-color), #ff8f00);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../testech-v2.html">TES<span>TECH</span></a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../testech-v2.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../testech-v2.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="article-header">
+        <div class="container">
+            <h1>Guía Completa: Termografía en Motores y Rodamientos</h1>
+            <p class="lead">Tabla de referencia rápida y protocolos de inspección</p>
+        </div>
+    </header>
+    
+    <article class="article-content">
+        <p><strong>El 43% de las fallas mecánicas en plantas industriales de Puebla son predecibles mediante termografía.</strong> Esta guía práctica te ayudará a identificar problemas antes de que causen paros costosos.</p>
+        
+        <h2>Tabla de Temperaturas Críticas - Referencia Rápida</h2>
+        
+        <div class="temp-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Normal (°C)</th>
+                        <th>Precaución (°C)</th>
+                        <th>Crítico (°C)</th>
+                        <th>Acción Requerida</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Motor Eléctrico</strong></td>
+                        <td>60-70</td>
+                        <td>75-85</td>
+                        <td>>90</td>
+                        <td>Revisar ventilación</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Rodamiento Motor</strong></td>
+                        <td>45-55</td>
+                        <td>60-70</td>
+                        <td>>75</td>
+                        <td>Lubricación urgente</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cople Mecánico</strong></td>
+                        <td>40-50</td>
+                        <td>55-65</td>
+                        <td>>70</td>
+                        <td>Verificar alineación</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Caja Reductora</strong></td>
+                        <td>50-60</td>
+                        <td>65-75</td>
+                        <td>>80</td>
+                        <td>Revisar nivel aceite</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Banda/Polea</strong></td>
+                        <td>35-45</td>
+                        <td>50-60</td>
+                        <td>>65</td>
+                        <td>Ajustar tensión</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Bomba Centrífuga</strong></td>
+                        <td>55-65</td>
+                        <td>70-80</td>
+                        <td>>85</td>
+                        <td>Inspección completa</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="alert-box">
+            <strong>⚠️ Importante:</strong> Estas temperaturas son referenciales para condiciones de Puebla (altitud 2,135m). Ajustar según especificaciones del fabricante y condiciones ambientales.
+        </div>
+        
+        <h2>Los 5 Puntos Críticos en Equipos Rotativos</h2>
+        
+        <h3>1. Rodamientos: El Punto Más Vulnerable</h3>
+        <p>Los rodamientos generan el 51% de las fallas en equipos rotativos. Un aumento de 10°C reduce su vida útil en 50%.</p>
+        
+        <div class="quick-tip">
+            <strong>💡 Tip Rápido:</strong> La diferencia de temperatura entre rodamientos del mismo equipo no debe exceder 5°C. Si es mayor, hay un problema de lubricación o alineación.
+        </div>
+        
+        <h3>2. Desalineación: El Asesino Silencioso</h3>
+        <p>Una desalineación de 0.1mm genera un aumento de 15°C en el acoplamiento. Señales térmicas:</p>
+        <ul>
+            <li>Patrón de calor asimétrico en el cople</li>
+            <li>Temperatura elevada en un lado del motor</li>
+            <li>Calentamiento excesivo en rodamientos</li>
+        </ul>
+        
+        <h3>3. Desequilibrio: Vibración = Calor</h3>
+        <p>El desequilibrio mecánico se manifiesta como calor irregular. Busca:</p>
+        <ul>
+            <li>Puntos calientes cíclicos</li>
+            <li>Temperatura fluctuante en carcasa</li>
+            <li>Calentamiento en soportes</li>
+        </ul>
+        
+        <h3>4. Lubricación Deficiente</h3>
+        <p>El 35% de fallas prematuras son por lubricación inadecuada:</p>
+        <ul>
+            <li><strong>Poca lubricación:</strong> Temperatura >20°C sobre lo normal</li>
+            <li><strong>Exceso:</strong> Aumento de 10-15°C por fricción del lubricante</li>
+            <li><strong>Contaminación:</strong> Puntos calientes irregulares</li>
+        </ul>
+        
+        <h3>5. Problemas Eléctricos en Motores</h3>
+        <p>Detectables antes de afectar la parte mecánica:</p>
+        <ul>
+            <li>Desequilibrio de fases: Diferencia >10°C entre bobinados</li>
+            <li>Conexiones flojas: Puntos calientes en bornera</li>
+            <li>Sobrecarga: Temperatura uniforme elevada</li>
+        </ul>
+        
+        <h2>Protocolo de Inspección Rápida (15 minutos)</h2>
+        
+        <ol>
+            <li><strong>Preparación (2 min):</strong>
+                <ul>
+                    <li>Verificar equipo en operación normal</li>
+                    <li>Registrar temperatura ambiente</li>
+                    <li>Identificar puntos de medición</li>
+                </ul>
+            </li>
+            
+            <li><strong>Inspección Motor (5 min):</strong>
+                <ul>
+                    <li>Carcasa: 4 puntos cardinales</li>
+                    <li>Rodamientos: Delantero y trasero</li>
+                    <li>Caja de conexiones</li>
+                    <li>Ventilador de enfriamiento</li>
+                </ul>
+            </li>
+            
+            <li><strong>Inspección Transmisión (5 min):</strong>
+                <ul>
+                    <li>Acoplamiento/Polea</li>
+                    <li>Eje y chumaceras</li>
+                    <li>Reductor (si aplica)</li>
+                </ul>
+            </li>
+            
+            <li><strong>Documentación (3 min):</strong>
+                <ul>
+                    <li>Capturar imágenes térmicas</li>
+                    <li>Registrar temperaturas máximas</li>
+                    <li>Notar anomalías</li>
+                </ul>
+            </li>
+        </ol>
+        
+        <h2>Frecuencia de Inspección Recomendada</h2>
+        
+        <table class="table">
+            <tr>
+                <td><strong>Equipos Críticos</strong></td>
+                <td>Mensual</td>
+            </tr>
+            <tr>
+                <td><strong>Equipos Importantes</strong></td>
+                <td>Bimensual</td>
+            </tr>
+            <tr>
+                <td><strong>Equipos Generales</strong></td>
+                <td>Trimestral</td>
+            </tr>
+            <tr>
+                <td><strong>Equipos de Respaldo</strong></td>
+                <td>Semestral</td>
+            </tr>
+        </table>
+        
+        <h2>Casos Comunes en Industrias de Puebla</h2>
+        
+        <p><strong>Industria Textil:</strong> Motores de telares con problemas de pelusa causan sobrecalentamiento. Solución: Limpieza quincenal y termografía mensual.</p>
+        
+        <p><strong>Industria Alimentaria:</strong> Bombas sanitarias con sellos mecánicos. El 67% de fugas son detectables 20 días antes por patrón térmico.</p>
+        
+        <p><strong>Industria Automotriz:</strong> Sistemas de transporte con múltiples motores. La termografía reduce 73% los paros de línea.</p>
+        
+        <div class="cta-box">
+            <h3>¿Necesitas una inspección profesional?</h3>
+            <p>Obtén un análisis termográfico completo de tus equipos rotativos</p>
+            <a href="../testech-v2.html#contacto" class="btn btn-light btn-lg">
+                Solicitar Inspección → 221 417 2304
+            </a>
+        </div>
+        
+        <h2>Errores Comunes a Evitar</h2>
+        
+        <ol>
+            <li><strong>Medir con equipo recién arrancado:</strong> Espera mínimo 30 minutos</li>
+            <li><strong>Ignorar la temperatura ambiente:</strong> Afecta las lecturas hasta 15%</li>
+            <li><strong>No considerar la emisividad:</strong> Superficies brillantes dan lecturas falsas</li>
+            <li><strong>Comparar equipos diferentes:</strong> Cada modelo tiene su rango normal</li>
+            <li><strong>No documentar tendencias:</strong> El historial predice fallas</li>
+        </ol>
+        
+        <h2>Retorno de Inversión</h2>
+        
+        <p>Una inspección termográfica mensual de 50 motores cuesta aproximadamente $12,000 pesos. Evitar una sola falla ahorra en promedio $180,000 pesos. <strong>ROI: 1,400% mínimo.</strong></p>
+        
+        <div class="quick-tip">
+            <strong>📊 Dato:</strong> Las plantas que implementan termografía mecánica regular reducen sus paros no programados en 68% el primer año.
+        </div>
+    </article>    <!-- Contact Form Section -->
+    <section class="cta-final" style="background: linear-gradient(135deg, #1a237e, #283593); padding: 60px 0;">
+        <div class="container">
+            <h2 style="color: white; text-align: center; margin-bottom: 20px;">No esperes a que falle. Agenda tu inspección hoy.</h2>
+            <p class="lead mb-5" style="color: white; text-align: center;">Único servicio de termografía con base en Puebla • ROI promedio de 500% documentado</p>
+            
+            <div class="contact-form" style="max-width: 600px; margin: 0 auto;">
+                <form action="https://formspree.io/f/mrbgvbqr" method="POST">
+                    <input type="hidden" name="_subject" value="Nueva solicitud de inspección - TESTECH Blog">
+                    <input type="hidden" name="_next" value="https://testech.mx/blog/termografia-mecanica-guia.html?success=true">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <input type="text" name="nombre" placeholder="Nombre completo *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                    <input type="text" name="empresa" placeholder="Empresa *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                    <input type="tel" name="telefono" placeholder="Teléfono (WhatsApp) *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                    <input type="email" name="email" placeholder="Email corporativo *" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                    
+                    <select name="servicio" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                        <option value="">Servicio de interés *</option>
+                        <option value="basico">Inspección Básica - $8,000</option>
+                        <option value="profesional">Mantenimiento Predictivo - $15,000</option>
+                        <option value="premium">Socio Termográfico - $25,000/mes</option>
+                        <option value="cotizacion">Cotización personalizada</option>
+                    </select>
+                    
+                    <select name="urgencia" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px;">
+                        <option value="">Urgencia de la inspección *</option>
+                        <option value="normal">Normal (próximos 30 días)</option>
+                        <option value="urgente">Urgente (próxima semana)</option>
+                        <option value="emergencia">🚨 EMERGENCIA (HOY)</option>
+                    </select>
+                    
+                    <textarea name="mensaje" rows="3" placeholder="Describe los equipos críticos a inspeccionar" style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px;"></textarea>
+                    
+                    <button type="submit" style="width: 100%; background: linear-gradient(135deg, #ff6f00, #ff8f00); color: white; font-size: 18px; font-weight: 700; padding: 15px; border: none; border-radius: 50px; cursor: pointer;">
+                        OBTÉN TU INSPECCIÓN GRATUITA
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 TESTECH Termografía Industrial | Blvd. América 308, Lomas de Angelópolis, Puebla</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Termografía Industrial Puebla | Guías y Soluciones | TESTECH</title>
+    <meta name="description" content="Blog especializado en termografía industrial Puebla. Casos reales, soluciones a problemas comunes, guías de mantenimiento predictivo y prevención de fallas.">
+    <meta name="keywords" content="blog termografía puebla, mantenimiento predictivo, prevención fallas industriales, guías termografía, casos éxito puebla">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://testech.mx/blog/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog TESTECH - Soluciones de Termografía Industrial en Puebla">
+    <meta property="og:description" content="Aprende cómo prevenir paros costosos con termografía. Casos reales de empresas en Puebla.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://testech.mx/blog/">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #ff6f00;
+            --dark-gray: #2c3e50;
+            --light-gray: #f8f9fa;
+            --white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--dark-gray);
+            background: var(--light-gray);
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            font-weight: 800;
+            font-size: 28px;
+            color: var(--primary-color) !important;
+        }
+        
+        .navbar-brand span {
+            color: var(--secondary-color);
+        }
+        
+        .nav-link {
+            color: var(--dark-gray) !important;
+            font-weight: 500;
+            margin: 0 15px;
+            transition: all 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        /* Hero Section */
+        .blog-hero {
+            background: linear-gradient(135deg, var(--primary-color), #283593);
+            color: white;
+            padding: 100px 0 60px;
+            margin-top: 70px;
+        }
+        
+        .blog-hero h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .blog-hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        /* Blog Cards */
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .blog-card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .blog-category {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--secondary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+        
+        .blog-card-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .blog-card-title {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        .blog-card-excerpt {
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+        
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        
+        .read-more {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        
+        .read-more:hover {
+            color: var(--primary-color);
+            transform: translateX(5px);
+        }
+        
+        .read-more i {
+            margin-left: 5px;
+        }
+        
+        /* Categories Filter */
+        .categories-filter {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .category-btn {
+            background: white;
+            border: 2px solid #ddd;
+            color: var(--dark-gray);
+            padding: 8px 20px;
+            border-radius: 25px;
+            margin: 5px;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        
+        .category-btn:hover,
+        .category-btn.active {
+            background: var(--secondary-color);
+            border-color: var(--secondary-color);
+            color: white;
+        }
+        
+        /* CTA Section */
+        .blog-cta {
+            background: linear-gradient(135deg, var(--secondary-color), #ff8f00);
+            color: white;
+            padding: 60px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        .blog-cta h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .blog-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .cta-btn {
+            background: white;
+            color: var(--secondary-color);
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            color: var(--secondary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../testech-v2.html">TES<span>TECH</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../testech-v2.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../testech-v2.html#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../testech-v2.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Blog de Termografía Industrial</h1>
+            <p>Soluciones reales para problemas industriales en Puebla</p>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Categories Filter -->
+            <div class="categories-filter text-center">
+                <button class="btn category-btn active">Todos</button>
+                <button class="btn category-btn">Sector Eléctrico</button>
+                <button class="btn category-btn">Industria Automotriz</button>
+                <button class="btn category-btn">Industria Alimentaria</button>
+                <button class="btn category-btn">Mantenimiento Predictivo</button>
+                <button class="btn category-btn">Casos de Éxito</button>
+            </div>
+            
+            <!-- Blog Grid -->
+            <div class="row g-4">
+                <!-- Article 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background-image: url('../testech-images/8.png');">
+                            <span class="blog-category">Sector Eléctrico</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h2 class="blog-card-title">5 Señales de Alerta en Tableros Eléctricos que No Debes Ignorar</h2>
+                            <p class="blog-card-excerpt">Descubre los problemas más comunes en tableros eléctricos de fábricas en Puebla y cómo la termografía puede detectarlos 45 días antes del fallo.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Sept 1, 2025</span>
+                                <a href="tableros-electricos-termografia.html" class="read-more">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background-image: url('../testech-images/11.png');">
+                            <span class="blog-category">Industria Automotriz</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h2 class="blog-card-title">Cómo la Industria Automotriz Puede Reducir Paros 87% con Termografía</h2>
+                            <p class="blog-card-excerpt">Descubre cómo una planta automotriz típica en Puebla podría ahorrar $4.2 millones anuales implementando inspecciones termográficas mensuales.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Ago 28, 2025</span>
+                                <a href="caso-automotriz-termografia.html" class="read-more">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background-image: url('../testech-images/industrialimentaria.png');">
+                            <span class="blog-category">Industria Alimentaria</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h2 class="blog-card-title">Cadena de Frío: El Error de $500K que Cometen las Empresas en Puebla</h2>
+                            <p class="blog-card-excerpt">Por qué el 73% de pérdidas en productos refrigerados se pueden prevenir con termografía infrarroja. Incluye checklist gratuito.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Ago 25, 2025</span>
+                                <a href="cadena-frio-termografia.html" class="read-more">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Article 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background-image: url('../testech-images/9.png');">
+                            <span class="blog-category">Mantenimiento Predictivo</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h2 class="blog-card-title">Motores y Rodamientos: Guía Completa de Termografía Mecánica</h2>
+                            <p class="blog-card-excerpt">Temperaturas normales vs críticas en equipos rotativos. Incluye tabla de referencia y protocolos de inspección usados en Puebla.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Ago 20, 2025</span>
+                                <a href="termografia-mecanica-guia.html" class="read-more">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Article 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background-image: url('../testech-images/10.png');">
+                            <span class="blog-category">Casos de Éxito</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h2 class="blog-card-title">De $180K en Pérdidas a Cero Paros: Caso Textil Puebla</h2>
+                            <p class="blog-card-excerpt">Cómo una fábrica textil en Cholula pasó de 3 paros mensuales a 8 meses sin interrupciones usando termografía programada.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Ago 15, 2025</span>
+                                <a href="caso-textil-puebla.html" class="read-more">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Article 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <article class="blog-card">
+                        <div class="blog-card-image" style="background-image: url('../testech-images/edificioscomerciales.png');">
+                            <span class="blog-category">Edificios Comerciales</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <h2 class="blog-card-title">Aires Acondicionados: Por Qué Fallan en Verano y Cómo Prevenirlo</h2>
+                            <p class="blog-card-excerpt">El 89% de fallas en HVAC en Angelópolis son prevenibles. Descubre el protocolo de inspección que usan los mejores hoteles.</p>
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar"></i> Ago 10, 2025</span>
+                                <a href="hvac-termografia-puebla.html" class="read-more">
+                                    Leer más <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            
+            <!-- Load More -->
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-primary btn-lg">Cargar más artículos</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="blog-cta">
+        <div class="container">
+            <h2>¿Tienes un problema específico en tu planta?</h2>
+            <p>Agenda una inspección gratuita y te mostramos cómo la termografía puede resolverlo</p>
+            <a href="../testech-v2.html#contacto" class="cta-btn">
+                <i class="fas fa-phone"></i> Llamar Ahora: 221 417 2304
+            </a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2024 TESTECH Termografía Industrial | Todos los derechos reservados</p>
+            <p>Blvd. América 308, Lomas de Angelópolis, Puebla | info@testech.mx</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

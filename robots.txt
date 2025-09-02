@@ -1,0 +1,36 @@
+# Robots.txt para TESTECH Termografía Industrial
+# https://testech.mx
+
+# Permitir acceso a todos los bots
+User-agent: *
+Allow: /
+Disallow: /testech-images/original/
+Disallow: /*.pdf$
+
+# Bloquear bots maliciosos conocidos
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Googlebot específico
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Sitemap
+Sitemap: https://testech.mx/sitemap.xml
+
+# Directivas adicionales
+# Permitir acceso a archivos CSS y JS
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# Host preferido (para Yandex)
+Host: testech.mx
