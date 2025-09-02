@@ -43,3 +43,4 @@ industrial-site-*/
 
 # Agents folder
 agents/
+.vercel
